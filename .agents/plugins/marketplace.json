@@ -1,0 +1,20 @@
+{
+  "name": "stm32cubemx-control",
+  "interface": {
+    "displayName": "STM32CubeMX Control"
+  },
+  "plugins": [
+    {
+      "name": "stm32cubemx-control",
+      "source": {
+        "source": "local",
+        "path": "./plugins/stm32cubemx-control"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

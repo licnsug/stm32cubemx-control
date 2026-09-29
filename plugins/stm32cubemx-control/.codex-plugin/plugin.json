@@ -1,0 +1,39 @@
+{
+  "name": "stm32cubemx-control",
+  "version": "0.6.0",
+  "description": "Drive STM32CubeMX from the command line or from an AI agent: create a project from an MCU name, reconfigure an existing one, place pins, regenerate code headlessly and verify with a Keil MDK build.",
+  "author": {
+    "name": "licnsug",
+    "url": "https://github.com/licnsug"
+  },
+  "homepage": "https://github.com/licnsug/stm32cubemx-control",
+  "repository": "https://github.com/licnsug/stm32cubemx-control",
+  "license": "MIT",
+  "keywords": [
+    "stm32",
+    "cubemx",
+    "keil",
+    "mdk",
+    "embedded",
+    "firmware",
+    "freertos",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "STM32CubeMX Control",
+    "shortDescription": "Create and reconfigure CubeMX projects without the GUI",
+    "longDescription": "Inspect what an MCU can be configured with from CubeMX's own device database, create a project from nothing but a part number, reconfigure an existing one, let CubeMX validate and normalise every edit, place pins it could not assign, regenerate code headlessly, and verify the result with a Keil MDK build. Reports a per-key diff of what CubeMX accepted or dropped, backs up before generating, and detects hung sessions.",
+    "developerName": "licnsug",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Write"
+    ],
+    "websiteURL": "https://github.com/licnsug/stm32cubemx-control",
+    "defaultPrompt": [
+      "Create a new CubeMX project for STM32G431CBUx",
+      "Enable TIM1 complementary PWM and regenerate",
+      "Why did CubeMX drop the peripheral I configured?"
+    ]
+  }
+}
